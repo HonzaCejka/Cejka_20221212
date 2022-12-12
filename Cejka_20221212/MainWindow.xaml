@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Cejka_20221212"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" Background="#FF333333" Foreground="#fff">
+        Title="MainWindow" Height="470" Width="820" Background="#FF333333" Foreground="#fff" ResizeMode="NoResize">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"/>
@@ -17,18 +17,27 @@
         <Grid Grid.Column="2">
             <Grid.RowDefinitions>
                 <RowDefinition Height="1*"/>
+                <RowDefinition Height="2*"/>
                 <RowDefinition Height="1*"/>
+                <RowDefinition Height="2*"/>
                 <RowDefinition Height="1*"/>
+                <RowDefinition Height="2*"/>
                 <RowDefinition Height="1*"/>
+                <RowDefinition Height="2*"/>
                 <RowDefinition Height="1*"/>
-                <RowDefinition Height="1*"/>
-                <RowDefinition Height="1*"/>
-                <RowDefinition Height="1*"/>
-                <RowDefinition Height="1*"/>
-                <RowDefinition Height="1*"/>
+                <RowDefinition Height="2*"/>
                 <RowDefinition Height="1*"/>
             </Grid.RowDefinitions>
+            <Button Content="Heal" HorizontalAlignment="Center" VerticalAlignment="Center" Height="54" Width="145" Grid.Row="1" Click="Heal"/>
+            <Button Content="Hit" HorizontalAlignment="Center" VerticalAlignment="Center" Height="54" Width="145" Grid.Row="3" Click="Hit_Click"/>
+            <Button Content="switch" HorizontalAlignment="Center" VerticalAlignment="Center" Height="54" Width="145" Grid.Row="9" Click="Switch_Click"/>
         </Grid>
-
+        <Border Name="P1" Grid.Column="1" BorderBrush="#fff" BorderThickness="2">
+            <TextBlock Name="txt1" FontSize="24" HorizontalAlignment="Center" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Center" Height="434" Width="291"/>
+        </Border>
+        <Border Name="P2" Grid.Column="3" BorderBrush="#fff" BorderThickness="2">
+            <TextBlock Name="txt2" FontSize="24" HorizontalAlignment="Center" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Center" Height="434" Width="291"/>
+        </Border>
+            
     </Grid>
 </Window>
